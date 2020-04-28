@@ -44,6 +44,10 @@ update_configs:
           # Ignore k8s.io dependencies which aren't 0.16.x
           dependency_name: 'k8s.io/...'
           version_requirement: ">=0.17.0"
+      - match:
+          # Ignore k8s.io dependencies which aren't 0.16.x
+          dependency_name: "k8s.io/**"
+          version_requirement: ">=0.17.0"
   - package_manager: "go:modules"
     directory: "/"
     target_branch: "all-rules"
@@ -84,6 +88,10 @@ update_configs:
           # Ignore k8s.io dependencies which aren't 0.16.x
           dependency_name: 'k8s\.io\/.*\/*.*'
           version_requirement: ">=0.17.0"
+      - match:
+          # Ignore k8s.io dependencies which aren't 0.16.x
+          dependency_name: "k8s.io/**"
+          version_requirement: ">=0.17.0"
   - package_manager: "go:modules"
     directory: "/"
     target_branch: "1-half-rules"
@@ -105,6 +113,10 @@ update_configs:
       - match:
           # Ignore k8s.io dependencies which aren't 0.16.x
           dependency_name: 'k8s\.io\/.*\/*.*'
+          version_requirement: ">=0.17.0"
+      - match:
+          # Ignore k8s.io dependencies which aren't 0.16.x
+          dependency_name: "k8s.io/**"
           version_requirement: ">=0.17.0"
   - package_manager: "go:modules"
     directory: "/"
@@ -129,6 +141,10 @@ update_configs:
           # Ignore k8s.io dependencies which aren't 0.16.x
           dependency_name: 'k8s\.io\/**'
           version_requirement: ">=0.17.0"
+      - match:
+          # Ignore k8s.io dependencies which aren't 0.16.x
+          dependency_name: "k8s.io/**"
+          version_requirement: ">=0.17.0"
   - package_manager: "go:modules"
     directory: "/"
     target_branch: "3-quarter-rules"
@@ -143,6 +159,10 @@ update_configs:
           # Ignore k8s.io dependencies which aren't 0.16.x
           dependency_name: 'k8s\.io\/.**'
           version_requirement: ">=0.17.0"
+      - match:
+          # Ignore k8s.io dependencies which aren't 0.16.x
+          dependency_name: "k8s.io/**"
+          version_requirement: ">=0.17.0"
   - package_manager: "go:modules"
     directory: "/"
     target_branch: "4-quarter-rules"
@@ -156,6 +176,10 @@ update_configs:
           # Ignore k8s.io dependencies which aren't 0.16.x
           dependency_name: 'k8s\.io\/**'
           version_requirement: ">=0.17.0"
+      - match:
+          # Ignore k8s.io dependencies which aren't 0.16.x
+          dependency_name: "k8s.io/**"
+          version_requirement: ">=0.17.0"
   - package_manager: "go:modules"
     directory: "/"
     target_branch: "5-quarter-rules"
@@ -164,6 +188,10 @@ update_configs:
       - match:
           # Ignore k8s.io dependencies which aren't 0.16.x
           dependency_name: 'k8s\.io\/.*\/*.*'
+          version_requirement: ">=0.17.0"
+      - match:
+          # Ignore k8s.io dependencies which aren't 0.16.x
+          dependency_name: "k8s.io/**"
           version_requirement: ">=0.17.0"
   - package_manager: "go:modules"
     directory: "/"
@@ -179,6 +207,10 @@ update_configs:
           # Ignore k8s.io dependencies which aren't 0.16.x
           dependency_name: >
               k8s\.io\/.**
+          version_requirement: ">=0.17.0"
+      - match:
+          # Ignore k8s.io dependencies which aren't 0.16.x
+          dependency_name: "k8s.io/**"
           version_requirement: ">=0.17.0"
   - package_manager: "go:modules"
     directory: "/"
@@ -197,4 +229,8 @@ update_configs:
       - match:
           # Ignore k8s.io dependencies which aren't 0.16.x
           dependency_name: 'k8s\.io\/**'
+          version_requirement: ">=0.17.0"
+      - match:
+          # Ignore k8s.io dependencies which aren't 0.16.x
+          dependency_name: "k8s.io/**"
           version_requirement: ">=0.17.0"
