@@ -6,7 +6,7 @@ require (
 	github.com/golang/protobuf v1.3.2 // indirect
 	github.com/google/go-cmp v0.4.0 // indirect
 	github.com/json-iterator/go v1.1.8 // indirect
-	github.com/spf13/viper v1.6.2
+	github.com/spf13/viper v1.7.0
 	github.com/stretchr/testify v1.4.0 // indirect
 	golang.org/x/crypto v0.0.0-20191011191535-87dc89f01550 // indirect
 	golang.org/x/sys v0.0.0-20191220142924-d4481acd189f // indirect
