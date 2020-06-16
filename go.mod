@@ -4,7 +4,7 @@ go 1.14
 
 require (
 	github.com/giantswarm/k8sclient v0.2.0
-	github.com/giantswarm/k8scloudconfig/v6 v6.0.2
+	github.com/giantswarm/k8scloudconfig/v6 v6.2.4
 	github.com/giantswarm/microerror v0.2.0
 	github.com/giantswarm/microkit v0.2.0
 	github.com/giantswarm/micrologger v0.3.1
