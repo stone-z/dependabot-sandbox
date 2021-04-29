@@ -1,0 +1,236 @@
+version: 2
+updates:
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: master
+  ignore:
+  - dependency-name: k8s.io/...
+    versions:
+    - ">=0.17.0"
+  - dependency-name: k8s.io/**
+    versions:
+    - ">=0.17.0"
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: all-rules
+  ignore:
+  - dependency-name: k8s.io/*
+    versions:
+    - ">=0.17.0"
+  - dependency-name: k8s.io/**
+    versions:
+    - ">=0.17.0"
+  - dependency-name: k8s\.io\/.**
+    versions:
+    - ">=0.17.0"
+  - dependency-name: "k8s\\.io\\/.**\n"
+    versions:
+    - ">=0.17.0"
+  - dependency-name: k8s\.io\/.*\/*.*
+    versions:
+    - ">=0.17.0"
+  - dependency-name: "k8s\\.io\\/.*\n"
+    versions:
+    - ">=0.17.0"
+  - dependency-name: k8s\.io\/**
+    versions:
+    - ">=0.17.0"
+  - dependency-name: "k8s\\.io\\/*\n"
+    versions:
+    - ">=0.17.0"
+  - dependency-name: github.com/prometheus/client_golang
+    versions:
+    - 1.9.0
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: 1-half-rules
+  ignore:
+  - dependency-name: k8s.io/*
+    versions:
+    - ">=0.17.0"
+  - dependency-name: k8s\.io\/.**
+    versions:
+    - ">=0.17.0"
+  - dependency-name: k8s\.io\/.*\/*.*
+    versions:
+    - ">=0.17.0"
+  - dependency-name: "k8s\\.io\\/*\n"
+    versions:
+    - ">=0.17.0"
+  - dependency-name: github.com/prometheus/client_golang
+    versions:
+    - 1.9.0
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: 2-half-rules
+  ignore:
+  - dependency-name: k8s.io/**
+    versions:
+    - ">=0.17.0"
+  - dependency-name: "k8s\\.io\\/.**\n"
+    versions:
+    - ">=0.17.0"
+  - dependency-name: "k8s\\.io\\/.*\n"
+    versions:
+    - ">=0.17.0"
+  - dependency-name: k8s\.io\/**
+    versions:
+    - ">=0.17.0"
+  - dependency-name: github.com/prometheus/client_golang
+    versions:
+    - 1.9.0
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: 3-quarter-rules
+  ignore:
+  - dependency-name: k8s\.io\/.**
+    versions:
+    - ">=0.17.0"
+  - dependency-name: "k8s\\.io\\/*\n"
+    versions:
+    - ">=0.17.0"
+  - dependency-name: k8s.io/client-go
+    versions:
+    - 0.20.2
+    - 0.20.3
+    - 0.20.4
+    - 0.20.5
+  - dependency-name: k8s.io/api
+    versions:
+    - 0.20.2
+    - 0.20.3
+  - dependency-name: k8s.io/apimachinery
+    versions:
+    - 0.20.2
+    - 0.20.3
+  - dependency-name: github.com/prometheus/client_golang
+    versions:
+    - 1.9.0
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: 4-quarter-rules
+  ignore:
+  - dependency-name: k8s.io/**
+    versions:
+    - ">=0.17.0"
+  - dependency-name: k8s\.io\/**
+    versions:
+    - ">=0.17.0"
+  - dependency-name: github.com/prometheus/client_golang
+    versions:
+    - 1.9.0
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: 5-quarter-rules
+  ignore:
+  - dependency-name: k8s\.io\/.*\/*.*
+    versions:
+    - ">=0.17.0"
+  - dependency-name: k8s.io/client-go
+    versions:
+    - 0.20.2
+    - 0.20.3
+    - 0.20.4
+    - 0.20.5
+  - dependency-name: k8s.io/apimachinery
+    versions:
+    - 0.20.2
+    - 0.20.3
+  - dependency-name: k8s.io/api
+    versions:
+    - 0.20.2
+    - 0.20.3
+  - dependency-name: github.com/prometheus/client_golang
+    versions:
+    - 1.9.0
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: 6-quarter-rules
+  ignore:
+  - dependency-name: "k8s\\.io\\/.**\n"
+    versions:
+    - ">=0.17.0"
+  - dependency-name: "k8s\\.io\\/.*\n"
+    versions:
+    - ">=0.17.0"
+  - dependency-name: k8s.io/client-go
+    versions:
+    - 0.20.2
+    - 0.20.3
+    - 0.20.4
+    - 0.20.5
+  - dependency-name: k8s.io/api
+    versions:
+    - 0.20.2
+    - 0.20.3
+  - dependency-name: k8s.io/apimachinery
+    versions:
+    - 0.20.2
+    - 0.20.3
+  - dependency-name: github.com/prometheus/client_golang
+    versions:
+    - 1.9.0
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: 7-tiebreaker
+  ignore:
+  - dependency-name: k8s.io/**
+    versions:
+    - ">=0.17.0"
+  - dependency-name: github.com/prometheus/client_golang
+    versions:
+    - 1.9.0
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: 8-tiebreaker
+  ignore:
+  - dependency-name: k8s\.io\/**
+    versions:
+    - ">=0.17.0"
+  - dependency-name: k8s.io/client-go
+    versions:
+    - 0.20.2
+    - 0.20.3
+    - 0.20.4
+    - 0.20.5
+  - dependency-name: k8s.io/apimachinery
+    versions:
+    - 0.20.2
+    - 0.20.3
+  - dependency-name: k8s.io/api
+    versions:
+    - 0.20.2
+    - 0.20.3
+  - dependency-name: github.com/prometheus/client_golang
+    versions:
+    - 1.9.0
